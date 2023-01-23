@@ -1,0 +1,72 @@
+grep command is used to search keyword in directory/files
+
+
+
+GREP COMMAND
+
+** very imp -  list the name of all of the files starting with the given keyword
+# ls -a | grep keyword                                   ex- ls -a | grep pr
+
+
+to search given keyword in file
+#grep keyword file-name
+
+To ignore the upper and lower case while searching using grep command in Linux
+# grep -i             ex- grep -i prashant pm.csv
+
+
+
+
+specify kelela word sodun dusra record check karnyasathi
+# grep -v 
+
+to print how many times (count) given keyword present in file 
+# grep -c "keyword" "filename"
+
+
+To search for exact match of given keyword in a file using grep command in Linux
+# grep -w
+
+to check dilela keyword kontya line varti ahe 
+# grep -n 
+
+
+to search a given keyword in multiple files 
+# grep "keyword" file1 file2 file3 ..................
+
+to search a given keyword in multiple files  without showing their file-names
+# grep -h "keyword" file1 file2 file3 ..................
+
+
+to search multiple keywords in a file 
+# grep -e "keyword-1" -e  "keyword-2"  filename
+
+
+
+to search multiple keywords in multiple files 
+# grep -e "keyword-1" -e  "keyword-2"  file1 file2 file3 .........
+
+or 
+
+# egrep "key1|key2|key3" file1 file2 ............
+
+
+to only print file name which matches given keyword 
+# grep -l "keyword" file1 file2 ........
+
+****
+to search eka file madhil sarv keyword dusrya files madhe ahet ka nhi 
+usage - basically we want to search 30 keyword then store it one txt file use this command
+# grep -f 'keyword.txt' file1 file2 file3 ........
+
+
+to print the matching line which start with given keyword 
+# grep "^keyword" filename
+
+to print the matching line whic end with given keyword
+# grep "keyword$" filename
+
+ekhady directory/folder madhe 100 files ahe tyamadhe key word shodnyasathi
+# grep -R -f "keyword" directory            ex- grep -e "keyword-1" -e  "keyword-2"  filename
+
+
