@@ -1,0 +1,56 @@
+NETSTAT
+
+gives info about network connection for TCP , UDP
+aplya server shi je pan connection estabilished ahet tyabaddal info dete
+gives info about konta ip kontya port la listen kartoy 
+network related kahihi information havi aslyas hi commnad use kartat
+
+to identify no. of connection on a given Port or IP 
+# netstat -putan | grep <Port/IP>
+
+putan - process ,udp, tcp, all ,numeric formate
+
+
+ex- netstat -putan | grep :22
+
+using putan options 
+t - tcp , u-udp , n-numerical addr , l-listening port , p-PID program
+
+to see all the sockets 
+# netstat -a 
+
+List all the TCP ports 
+# netstat -at
+
+list all the TCP v6 ports
+# netstat -6at
+
+List all the UDP ports
+# netstat -au
+
+List all listening Ports
+# netstat -l
+
+to get all listing prot in numerical formate - means local host vagere nhi disnar tar ip distil
+# netstat -aln | more
+
+to find which port running which program
+# netstat -ap | more 
+
+
+to view the routing table
+# netstat -r 
+
+to check no. of connection from a specific ip 
+# netstat -an | grep <IP>
+
+to get the list of all network interfaces
+# netstat -i 
+
+to see statistics by protocol   - 
+ex- tcp protocol madhe kiti connection kiti data packet transfer kele
+# netstat -s
+
+
+
+
